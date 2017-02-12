@@ -44,7 +44,7 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
 
     # Useful template tags:
-    # 'django.contrib.humanize',
+     'django.contrib.humanize',
 
     # Admin
     'django.contrib.admin',
@@ -60,7 +60,7 @@ THIRD_PARTY_APPS = (
 LOCAL_APPS = (
     # custom users app
     'rapidito.users.apps.UsersConfig',
-    # Your stuff: custom apps go here
+    'rapidito.factura'
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

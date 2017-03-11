@@ -64,3 +64,9 @@ rapidito/media/
 
 
 staticfiles/
+
+# venv
+/*env*/
+
+# cache
+.cache/

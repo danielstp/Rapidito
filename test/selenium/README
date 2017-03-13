@@ -1,0 +1,15 @@
+Configuracion de protractor y selenium webdriver
+
+sudo npm install -g protractor webdriver-manager #Opcional: se puede instalar localmente.
+sudo webdriver-manager update
+sudo webdriver-manager start
+
+NOTA: Usar sudo en caso de instalarlo como global, asi no se tiene problemas con los permisos. Teoricamente si uno lo instala local deberia funcionar sin sudo.
+
+Para ejecutar los test individualmente se ejecuta run_dev.sh
+
+./run_dev.sh test_cases/{nombre_del_test}.js
+
+NOTA 2: para ejecutar los tests que requieran un usuario existe el archivo dentro de la carpeta fixtures, para poblar la base de datos:
+
+python manage.py loaddata test/fixtures/{nombre_del_fixture}.yml

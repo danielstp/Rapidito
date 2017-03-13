@@ -1,0 +1,18 @@
+- model: "users.user"
+  pk: 1
+  fields:
+    is_superuser: false
+    username: "usertest"
+    email: "test@test.com"
+    password: 'pbkdf2_sha256$30000$7CjUSyRvmSBr$3VW0aFBijkBRjsqLBY2XS/10VWTCuMzeFr162ilWIYQ=' #strange!
+    is_staff: false
+    is_active: true
+
+- model: account.emailaddress
+  pk: 1
+  fields:
+    user: 1 #User id from user table
+    email: 'test_user@test.com'
+    verified: true
+
+

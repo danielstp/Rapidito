@@ -1,11 +1,6 @@
 exports.config = {
   framework: 'jasmine',
-  seleniumAddress: 'http://localhost:8001',
-  specs: ['spec.js']
-};
-
-exports.config = {
-
+  seleniumAddress: 'http://localhost:8000',
   capabilities: {
     'browserName': 'chrome'
   },

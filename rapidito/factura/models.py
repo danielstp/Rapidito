@@ -16,5 +16,5 @@ class Factura(models.Model):
     # nit = models.IntegerField()
     factura = models.IntegerField()
     fecha = models.DateField()
-    importe = models.DecimalField(decimal_places=2,max_digits=10)
+    importe = models.DecimalField(decimal_places=2, max_digits=10)
     control = models.IntegerField()

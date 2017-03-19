@@ -12,6 +12,7 @@ from django.db import migrations
 
 
 def update_site_forward(apps, schema_editor):
+    #pylint: disable=unused-argument
     """Set site domain and name."""
     Site = apps.get_model('sites', 'Site')
     Site.objects.update_or_create(
@@ -24,6 +25,7 @@ def update_site_forward(apps, schema_editor):
 
 
 def update_site_backward(apps, schema_editor):
+    #pylint: disable=unused-argument
     """Revert site domain and name to default."""
     Site = apps.get_model('sites', 'Site')
     Site.objects.update_or_create(

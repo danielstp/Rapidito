@@ -32,21 +32,34 @@ Setting Up Your Users
 
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
-Test coverage
-^^^^^^^^^^^^^
 
-To run the tests, check your test coverage, and generate an HTML coverage report::
+Running pylint
+~~~~~~~~~~~~~~
 
-    $ coverage run manage.py test
-    $ coverage html
-    $ open htmlcov/index.html
+Es necesario ejecutar pylint para mantener el código con buenas practicas de programación.
+
+::
+
+  $ pylint rapidito
+
 
 Running tests with py.test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Antes de ejecutar las pruebas, es necesario que revisen si el [usuario] tenga acceso
+para crear base de datos. De lo contrario genera errores
+
+::
+
+  $ sudo -u postgres psql postgres
+  postgres=# ALTER USER [username] CREATEDB;
+  postgres=#\q
+
 ::
 
   $ py.test
+
+
 
 Live reloading and Sass CSS compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

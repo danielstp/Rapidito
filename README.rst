@@ -44,6 +44,15 @@ To run the tests, check your test coverage, and generate an HTML coverage report
 Running tests with py.test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Antes de ejecutar las pruebas, es necesario que revisen si el [usuario] tenga acceso
+para crear base de datos. De lo contrario genera errores
+
+::
+
+  $ sudo -u postgres psql postgres
+  postgres=# ALTER USER [username] CREATEDB;
+  postgres=#\q
+
 ::
 
   $ py.test

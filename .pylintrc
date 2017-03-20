@@ -6,7 +6,7 @@ ignore=venv
 max-line-length=120
 
 [MESSAGES CONTROL]
-disable=missing-docstring,invalid-name
+disable=missing-docstring,invalid-name,broad-except
 
 [DESIGN]
 max-parents=13

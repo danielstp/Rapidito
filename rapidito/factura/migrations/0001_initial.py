@@ -35,7 +35,8 @@ class Migration(migrations.Migration):
                 ('fecha', models.DateField()),
                 ('importe', models.DecimalField(decimal_places=2, max_digits=10)),
                 ('control', models.IntegerField()),
-                ('autorizacion', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='factura.Autorizacion')),
+                ('autorizacion', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                                   to='factura.Autorizacion')),
             ],
         ),
         migrations.AddField(

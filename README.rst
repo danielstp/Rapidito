@@ -84,10 +84,20 @@ para crear base de datos. De lo contrario genera errores
 Live reloading and Sass CSS compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Moved to `Live reloading and SASS compilation`_.
+Asegurar que nodejs esta instalado
 
-.. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
+::
+  $ npm install
 
+Instalar compass
+
+::
+  $ gem install compass
+
+Ejecutar
+
+::
+  $ gulp runServer
 
 
 Celery

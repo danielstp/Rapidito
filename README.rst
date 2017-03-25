@@ -33,15 +33,28 @@ Setting Up Your Users
 For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
 
 
-Running pylint
+Running Linters
+---------------
+
+Es necesario ejecutar flake8, pylint para mantener el código con buenas practicas de programación.
+
+
+Running flake8
 ~~~~~~~~~~~~~~
 
-Es necesario ejecutar pylint para mantener el código con buenas practicas de programación.
+::
+  $ flake8 rapidito
+
+Para excluir carpetas, modificar el archivo setup.cfg
+
+Running pylint
+~~~~~~~~~~~~~~
 
 ::
 
   $ pylint rapidito
 
+Para excluir carpetas, modificar el archivo .pylintrc
 
 Running tests with py.test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

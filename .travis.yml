@@ -13,5 +13,6 @@ python:
 install: "pip install -r requirements/base.txt -r requirements/local.txt -r requirements/production.txt -r requirements/test.txt"
 # command to run tests
 script:
+  - flake8 rapidito
   - pylint rapidito
   - pytest

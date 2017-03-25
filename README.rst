@@ -36,8 +36,15 @@ For convenience, you can keep your normal user logged in on Chrome and your supe
 Running Linters
 ---------------
 
-Es necesario ejecutar flake8, pylint para mantener el código con buenas practicas de programación.
+Es necesario ejecutar pep8, flake8, pylint para mantener el código con buenas practicas de programación.
 
+Running pep8
+~~~~~~~~~~~~~~
+
+::
+  $ pep8 rapidito
+
+Para excluir carpetas, modificar el archivo setup.cfg
 
 Running flake8
 ~~~~~~~~~~~~~~

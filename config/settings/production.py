@@ -16,6 +16,7 @@ from __future__ import absolute_import, unicode_literals
 
 from boto.s3.connection import OrdinaryCallingFormat
 from django.utils import six
+from django.utils.translation import ugettext_noop
 
 import logging
 
@@ -28,6 +29,14 @@ from .base import *  # noqa
 # Raises ImproperlyConfigured exception if DJANGO_SECRET_KEY not in os.environ
 SECRET_KEY = env('DJANGO_SECRET_KEY')
 
+LANGUAGES = [
+    ('es', ugettext_noop('Spanish')),
+    ('es-ar', ugettext_noop('Argentinian Spanish')),
+    ('es-co', ugettext_noop('Colombian Spanish')),
+    ('es-mx', ugettext_noop('Mexican Spanish')),
+    ('es-ni', ugettext_noop('Nicaraguan Spanish')),
+    ('es-ve', ugettext_noop('Venezuelan Spanish')),
+]
 
 # This ensures that Django will be able to detect a secure connection
 # properly on Heroku.

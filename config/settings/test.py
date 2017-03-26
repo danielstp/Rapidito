@@ -6,6 +6,7 @@ Test settings
 '''
 
 from .base import *  # noqa
+from django.utils.translation import ugettext_noop
 
 
 # DEBUG
@@ -19,6 +20,15 @@ TEMPLATES[0]['OPTIONS']['debug'] = False
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 # Note: This key only used for development and testing.
 SECRET_KEY = env('DJANGO_SECRET_KEY', default='CHANGEME!!!')
+
+LANGUAGES = [
+    ('es', ugettext_noop('Spanish')),
+    ('es-ar', ugettext_noop('Argentinian Spanish')),
+    ('es-co', ugettext_noop('Colombian Spanish')),
+    ('es-mx', ugettext_noop('Mexican Spanish')),
+    ('es-ni', ugettext_noop('Nicaraguan Spanish')),
+    ('es-ve', ugettext_noop('Venezuelan Spanish')),
+]
 
 # Mail settings
 # ------------------------------------------------------------------------------

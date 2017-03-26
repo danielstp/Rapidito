@@ -1,4 +1,46 @@
 Install
 =========
 
-This is where you write how to get a new laptop to run this project.
+Este proyecto fue generado por Cookiecutter Django http://cookiecutter-django.readthedocs.io/en/latest/developing-locally.html
+
+Estas instrucciones fueron probadas para la distribución Debian Jessie GNU/Linux
+
+1) Instalar las dependencias del sistema
+
+$ cd rapidito
+$ sudo utility/install_os_dependencies.sh install
+
+2) Instalar las dependecias de python pip virtualenv
+
+$ sudo apt-get install python3-pip python3-virtualenv
+
+3) Crear virtualenv llamado venv
+
+$ virtualenv venv --python=`which python3`
+
+4) Activar virtualenv
+
+$ source venv/bin/activate
+
+5) Instalar las demás dependencias de python3
+
+$ utility/install_python_dependencies.sh
+
+6) Instalar postgresql
+
+$ sudo apt-get install postgresql
+
+7) Crear usuario y base de datos, reemplazar [username] por nombre de usuario de preferencia (sin los corchetes)
+
+$ sudo -u postgres bash
+$ createuser [username]
+$ createdb -O [username] rapidito
+$ exit
+
+8) migrar base de datos
+
+$ python manage.py migrate
+
+9) ejecutar el servicio
+
+$ python manage.py runserver

@@ -17,3 +17,6 @@ pylint
 pylint-common
 pylint-django
 pylint-celery
+
+#pep
+pep8

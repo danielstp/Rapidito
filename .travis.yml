@@ -10,8 +10,10 @@ language: python
 python:
 - "3.5"
 # command to install dependencies
-install: "pip install -r requirements/base.txt -r requirements/local.txt -r requirements/test.txt"
+install: "pip install -r requirements/base.txt -r requirements/local.txt -r requirements/production.txt -r requirements/test.txt"
 # command to run tests
 script:
+  - pep8 rapidito
+  - flake8 rapidito
   - pylint rapidito
   - pytest

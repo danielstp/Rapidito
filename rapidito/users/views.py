@@ -24,7 +24,7 @@ class UserRedirectView(LoginRequiredMixin, RedirectView):
                        kwargs={'username': self.request.user.username})
 
 
-class UserUpdateView(LoginRequiredMixin, UpdateView):
+class UserUpdateView(LoginRequiredMixin, UpdateView):  # pylint: disable=too-many-ancestors
 
     fields = ['name', ]
 
@@ -36,7 +36,7 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):
         return reverse('users:detail',
                        kwargs={'username': self.request.user.username})
 
-    def get_object(self):
+    def get_object(self):  # pylint: disable=arguments-differ
         # Only get the User record for the user making the request
         return User.objects.get(username=self.request.user.username)
 

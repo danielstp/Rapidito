@@ -11,15 +11,24 @@ Alternativa Libre al Facilito http://www.opinion.com.bo/opinion/articulos/2016/0
 :License: GPLv3
 
 
-Settings
---------
-
-Moved to settings_.
-
-.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
-
 Basic Commands
 --------------
+
+Para ejecutar el servicio modo desarrollador
+
+::
+  $ python manage.py runserver
+
+Si estas depurando
+
+::
+  $ python manage.py runnserver --noreload --nothreading
+
+También es bueno usar el depurador pudb
+
+::
+  $ python -m pudb manage.py runserver --noreload --nothreading
+
 
 Setting Up Your Users
 ^^^^^^^^^^^^^^^^^^^^^
@@ -58,7 +67,6 @@ Running pylint
 ~~~~~~~~~~~~~~
 
 ::
-
   $ pylint rapidito
 
 Para excluir carpetas, modificar el archivo .pylintrc
@@ -70,13 +78,11 @@ Antes de ejecutar las pruebas, es necesario que revisen si el [usuario] tenga ac
 para crear base de datos. De lo contrario genera errores
 
 ::
-
   $ sudo -u postgres psql postgres
   postgres=# ALTER USER [username] CREATEDB;
   postgres=#\q
 
 ::
-
   $ py.test
 
 

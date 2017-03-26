@@ -1,18 +1,22 @@
 Rapidito
 ========
 
-Alternativa Libre al Facilito http://www.opinion.com.bo/opinion/articulos/2016/0105/noticias.php?id=179917
+La Comunidad Software Libre Bolivia, tiene el objetivo de desarrollar "El Sistema de Facturación Virtual",
+una aplicación Web, como alternativa al Software Privativo desarrollado por Inpuestos Nacionales del
+Estado Plurinacional de Bolivia.
 
-.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
-     :target: https://github.com/pydanny/cookiecutter-django/
-     :alt: Built with Cookiecutter Django
+Esto amparado en la Ley, Decretos y pronta reglamentación de la "Migración de Software Libre en las Instituciones
+del Estado Plurinacional de Bolivia", y contribuir a producir Software Libre, bajo las licencias compatibles
+con GNU General Plublic License.
 
+Install
+^^^^^^^
 
-:License: GPLv3
+Leer el archivo docs/install.rst para mas instrucciones.
 
 
 Basic Commands
---------------
+^^^^^^^^^^^^^^
 
 Para ejecutar el servicio modo desarrollador
 
@@ -43,7 +47,7 @@ For convenience, you can keep your normal user logged in on Chrome and your supe
 
 
 Running Linters
----------------
+^^^^^^^^^^^^^^^
 
 Es necesario ejecutar pep8, flake8, pylint para mantener el código con buenas practicas de programación.
 

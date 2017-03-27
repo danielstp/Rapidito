@@ -6,13 +6,13 @@ class Empresa(models.Model):
     nombre = models.CharField(max_length=255)
 
 
-class Autorizacion(models.Model):
-    autorizacion = models.IntegerField(primary_key=True)
+class Autorización(models.Model):
+    autorización = models.IntegerField(primary_key=True)
     nit = models.ForeignKey(Empresa)
 
 
 class Factura(models.Model):
-    autorizacion = models.ForeignKey(Autorizacion)
+    autorización = models.ForeignKey(Autorización)
     # nit = models.IntegerField()
     factura = models.IntegerField()
     fecha = models.DateField()

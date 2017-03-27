@@ -36,7 +36,7 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):  # pylint: disable=too-man
         return reverse('users:detail',
                        kwargs={'username': self.request.user.username})
 
-    def get_object(self):
+    def get_object(self, queryset=None):
         # Only get the User record for the user making the request
         return User.objects.get(username=self.request.user.username)
 

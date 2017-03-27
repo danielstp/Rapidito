@@ -44,7 +44,7 @@ class CeleryConfig(AppConfig):
             try:
                 opbeat_register_signal(opbeat_client)
             except Exception as e:
-                opbeat_logger.exception('Failed installing celery hook: %s' % e)
+                opbeat_logger.exception('Failed installing celery hook: %s', e)
 
             if 'opbeat.contrib.django' in settings.INSTALLED_APPS:
                 opbeat_register_handlers()

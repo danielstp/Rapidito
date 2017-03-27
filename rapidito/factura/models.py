@@ -14,7 +14,8 @@ class Autorización(models.Model):
         return self.nombre
 
     class Meta:
-        verbose_name_plural= _(u'Autorizaciones')
+        verbose_name_plural = "Autorizaciones"
+
 
 class Factura(models.Model):
     autorización = models.ForeignKey(Autorización)

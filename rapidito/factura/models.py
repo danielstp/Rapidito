@@ -10,6 +10,11 @@ class Autorización(models.Model):
     autorización = models.IntegerField(primary_key=True)
     nit = models.ForeignKey(Empresa)
 
+    def __str__(self):
+        return self.nombre
+
+    class Meta:
+        verbose_name_plural= _(u'Autorizaciones')
 
 class Factura(models.Model):
     autorización = models.ForeignKey(Autorización)

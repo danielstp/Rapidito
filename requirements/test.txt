@@ -1,6 +1,8 @@
 # Test dependencies go here.
 -r base.txt
 
+raven==6.0.0
+opbeat==3.5.2
 
 
 coverage==4.3.4

@@ -1,6 +1,6 @@
 [MASTER]
 load-plugins=pylint_common, pylint_django, pylint_celery
-ignore=venv
+ignore=venv, migrations
 
 [FORMAT]
 max-line-length=120

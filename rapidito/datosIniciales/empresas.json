@@ -1,0 +1,51 @@
+[
+{
+   "model": "factura.empresa",
+   "pk": 133795023,
+   "fields": {
+      "nombre": "Farmacia Chavez SRL"
+   }
+},
+{
+   "model": "factura.empresa",
+   "pk": 175438029,
+   "fields": {
+      "nombre": "Kadabra S.R.L."
+   }
+},
+{
+   "model": "factura.empresa",
+   "pk": 1006349026,
+   "fields": {
+      "nombre": "CINEL SRL"
+   }
+},
+{
+   "model": "factura.empresa",
+   "pk": 1006833024,
+   "fields": {
+      "nombre": "Inmobiliaria Kantutani S.A."
+   }
+},
+{
+   "model": "factura.empresa",
+   "pk": 1015447026,
+   "fields": {
+      "nombre": "FarmaCorp SA"
+   }
+},
+{
+   "model": "factura.empresa",
+   "pk": 1022039027,
+   "fields": {
+      "nombre": "Corporaci\u00f3n Boliviana de Farmacias SA"
+   }
+},
+{
+   "model": "factura.empresa",
+   "pk": 1028627025,
+   "fields": {
+      "nombre": "HiperMaxi SA"
+   }
+}
+]

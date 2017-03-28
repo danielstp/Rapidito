@@ -1,0 +1,58 @@
+[
+{
+   "model": "factura.autorizaci\u00f3n",
+   "pk": 263401600022840,
+   "fields": {
+      "nit": 1015447026
+   }
+},
+{
+   "model": "factura.autorizaci\u00f3n",
+   "pk": 263401600032322,
+   "fields": {
+      "nit": 1028627025
+   }
+},
+{
+   "model": "factura.autorizaci\u00f3n",
+   "pk": 271401600146065,
+   "fields": {
+      "nit": 133795023
+   }
+},
+{
+   "model": "factura.autorizaci\u00f3n",
+   "pk": 271401700009229,
+   "fields": {
+      "nit": 1022039027
+   }
+},
+{
+   "model": "factura.autorizaci\u00f3n",
+   "pk": 271401700026574,
+   "fields": {
+      "nit": 133795023
+   }
+},
+{
+   "model": "factura.autorizaci\u00f3n",
+   "pk": 314401600006267,
+   "fields": {
+      "nit": 1006833024
+   }
+},
+{
+   "model": "factura.autorizaci\u00f3n",
+   "pk": 332401600008876,
+   "fields": {
+      "nit": 1006349026
+   }
+},
+{
+   "model": "factura.autorizaci\u00f3n",
+   "pk": 384401600061534,
+   "fields": {
+      "nit": 175438029
+   }
+}
+]

@@ -27,3 +27,8 @@ class Factura(models.Model):
     fecha = models.DateField()
     importe = models.DecimalField(decimal_places=2, max_digits=10)
     control = models.CharField(max_length=128)
+
+
+class TipoDeFormulario(models.Model):
+  codigo = models.CharField(max_length=10)
+  nombre = models.CharField(max_length=255)

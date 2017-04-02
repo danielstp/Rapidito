@@ -1,0 +1,442 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+/*
+ * Typography
+ */
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+ /* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#logo-section{
+	margin-top: 2px;
+	display:inline-block;
+	width: 180px;
+	height: 166px;
+}
+
+#logo-section div img {
+	display: block;
+	margin: 0px auto;
+}
+
+#logo-title{
+	margin-top: 2px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	text-align: center;
+	font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#logo-title p {
+	margin: 0px;
+}
+
+#libre-impuestos-section{
+	width: 570px;
+	height: 166px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+#libre-impuestos-section-title{
+	font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#libre-impuestos-section-title table {
+	width: 100%;
+}
+
+#libre-impuestos-section-title table tr td{
+	border: 1px solid black;
+	text-align: center;
+}
+
+#formulario-section{
+}
+
+#formulario-title {
+	display: inline-block;
+	width: 90px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 10px;
+	height: 133px;
+}
+
+
+#selection-section{
+	display:inline-block;
+	vertical-align: top;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding-left: 10px;
+	width: 310px;
+	height: 133px;
+	font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#selection-section table{
+	width: 100%;
+}
+
+.selection-input{
+	background-color: #d7dfe8
+}
+
+#numero-orden-section{
+	display:inline-block;
+	vertical-align: top;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 10px;
+	width: 140px;
+	height: 133px;
+	font: 12px/1.2 'Open Sans',sans-serif;
+}
+#numero-orden-section table{
+	height: 100%;
+}
+
+.orden-input {
+    width: 126px;
+    border: 1px solid black;
+    background-color: #d7dfe8
+}
+
+#folio-section{
+	margin-top: 2px;
+	display:inline-block;
+	vertical-align: top;
+	font: 12px/1.2 'Open Sans',sans-serif;
+	width: 170px;
+	height: 166px;
+}
+
+#folio-title{
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 4px;
+}
+
+#folio-periodo{
+	margin-top: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	height: 90px;
+}
+
+#folio-periodo p{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+
+#folio-periodo table{
+	width: 100%;
+}
+
+#folio-title p {
+	margin: 2px;
+}
+
+#folio-title-text{
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.folio-input{
+	width: 60px;
+	border: 1px solid black;
+	background-color: #d7dfe8
+}
+
+#formulario-personal-section{
+  width: 930px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#formulario-personal-section-nombres{
+	width: 100%;
+}
+
+#formulario-personal-section-cell{
+	width: 80%;
+}
+
+
+.formulario-personal-input{
+	width: 99%;
+	border: 1px solid black;
+	background-color: #d7dfe8
+}
+
+#formulario-empleador-section{
+ width: 930px;
+ margin-top: 5px;
+ margin-left: auto;
+ margin-right: auto;
+ border: 1px solid black;
+ border-radius: 5px;
+ font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#formulario-empleador-section table{
+	width: 100%;
+}
+
+#formulario-empleador-section table tr td{
+	white-space: nowrap;
+}
+
+.formulario-empleador-input{
+	width: 99%;
+	border: 1px solid black;
+	background-color: #d7dfe8
+}
+
+#cell-input{
+	border: none;
+	width: 99%;
+}
+
+#grid-section{
+ width: 930px;
+ margin-top: 15px;
+ margin-left: auto;
+ margin-right: auto;
+ border: 1px solid black;
+ border-radius: 5px;
+}
+
+#grid-section table{
+	/*table-layout: fixed;*/
+	font: 12px/1.2 'Open Sans',sans-serif;
+}
+#grid-section table th{
+	border: 1px solid gray;
+	color: #0000c0;
+	background-color: #ceddfc;
+}
+#grid-section table td{
+	border: 1px solid black;
+}
+
+.column-Nro{
+	width: 40px;
+}
+
+.column-NIT{
+	width: 150px;
+}
+.column-fecha{
+	width: 100px;
+}
+
+#grid-title{
+	color: white;
+	background-color: #191970
+}
+
+#total-section{
+ width: 930px;
+ margin-top: 5px;
+ margin-left: auto;
+ margin-right: auto;
+ font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#total-section table tr td{
+	border: 1px solid black;
+}
+
+#total-section table{
+	margin-top: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 100%
+}
+
+#total{
+	width: 60px;
+}
+
+#total-rubro{
+ width: 930px;
+ margin-top: 5px;
+ margin-left: auto;
+ margin-right: auto;
+ font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#total-rubro table{
+	margin-top: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 100%
+}
+
+#total-rubro table tr td{
+	border: 1px solid black;
+}
+
+#Descripcion{
+	width: 400px;
+}
+
+#footer-section {
+ width: 930px;
+ margin-top: 5px;
+ margin-left: auto;
+ margin-right: auto;
+ border: 1px solid black;
+ border-radius: 5px;
+}
+
+#lugar-section{
+	display: inline-block;
+	margin-top: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 200px;
+	font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#lugar-section table{
+	table-layout: fixed;
+	text-align: center;
+	font
+}
+
+#lugar-section table td{
+	border: 1px solid black;
+	height: 30px;
+	background-color: #d7dfe8
+}
+
+#declaracion-section{
+	display: inline-block;
+	margin-top: 5px;
+	vertical-align: top;
+	text-align: center;
+	width: 510px;
+	font: 12px/1.2 'Open Sans',sans-serif;
+}
+
+#firma{
+	height: 40px;
+}
+
+#sello{
+	height: 80px;
+}
+
+#sello-section{
+	display: inline-block;
+	margin-top: 5px;
+	vertical-align: top;
+	text-align: center;
+	width: 200px;
+	font: 12px/1.2 'Open Sans',sans-serif;
+	border: 1px solid black;
+}
+
+
+header{
+ width: 930px;
+ margin: 0px auto;
+ background-color: #f0f8ff
+}
+
+#page {
+	width: 930px;
+	margin: 0px auto;
+	background-color: #f0f8ff
+}
+
+footer{
+ width: 930px;
+ margin-top: 5px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+footer table{
+ width: 100%;
+}
+
+

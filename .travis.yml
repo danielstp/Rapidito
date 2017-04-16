@@ -6,6 +6,7 @@ env:
 - TRAVIS_NODE_VERSION="7.0.0"
 # command to install dependencies
 install:
+  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
   - pip install -r requirements/base.txt
   - pip install -r requirements/local.txt
   - pip install -r requirements/production.txt

@@ -19,6 +19,7 @@ class UserDetailView(LoginRequiredMixin, DetailView):
 class UserRedirectView(LoginRequiredMixin, RedirectView):
     permanent = False
 
+    # pylint: disable=arguments-differ
     def get_redirect_url(self):
         return reverse('users:detail',
                        kwargs={'username': self.request.user.username})

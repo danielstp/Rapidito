@@ -1,9 +1,9 @@
 sudo: true
-language: node_js
-node_js:
-- "5.5"
+language: python
 python:
 - "3.5"
+env:
+- TRAVIS_NODE_VERSION="7"
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq build-essential gettext python-dev zlib1g-dev libpq-dev xvfb
@@ -11,15 +11,14 @@ before_install:
   - sudo apt-get install -qq graphviz-dev python-setuptools python3-dev python-virtualenv python-pip
   - sudo apt-get install -qq firefox automake libtool libreadline6 libreadline6-dev libreadline-dev
   - sudo apt-get install -qq libsqlite3-dev libxml2 libxml2-dev libssl-dev libbz2-dev wget curl llvm
-  - python3 -V
-  - pip -V
 # command to install dependencies
 install:
+  - pip install -r requirements/base.txt
+  - pip install -r requirements/local.txt
+  - pip install -r requirements/production.txt
+  - pip install -r requirements/test.txt"
   - npm install
-  - sudo pip install -r requirements/base.txt
-  - sudo pip install -r requirements/local.txt
-  - sudo pip install -r requirements/production.txt
-  - sudo pip install -r requirements/test.txt"
+
 # command to run tests
 script:
   - pep8 rapidito

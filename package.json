@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
+    "uuid": "^3.0.1",
+    "minimatch": "^3.0.2",
+    "graceful-fs": "^3.0.0",
     "browser-sync": "^2.14.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",

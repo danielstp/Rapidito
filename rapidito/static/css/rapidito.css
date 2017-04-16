@@ -439,4 +439,50 @@ footer table{
  width: 100%;
 }
 
+.formulario-encabezado {
+	border-spacing: 10px;
+	border-collapse: separate;
+	}
+
+.formulario-encabezado p {
+	margin: 0;
+	text-align: center;
+	}
+
+.formulario-encabezado input[type=text] {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #d7dfe8;
+	border: 1px black solid;
+	}
+
+.formulario-encabezado td {
+	font-family: Tahoma Verdana;
+	font-size: 14px;
+	border: 1px solid black;
+	padding: 4px;
+	background-color: #f0f8ff;
+	border-radius: 3px;
+	}
+
+.formulario-logo {
+	width: 90px;
+	}
+
+.formulario-lugar {
+	width: 180px;
+	}
+
+.formulario-lugar select {
+	margin-bottom: 20px;
+	width: 100%;
+	}
+
+.formulario-tipo div {
+	margin: 0 auto 0 auto;
+	}
+
+.formulario-nit div {
+	margin-bottom: 5px;
+	}
 

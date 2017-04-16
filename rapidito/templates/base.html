@@ -58,84 +58,55 @@
         </nav>
 
         <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-          <h1>Formulario 110</h1>
-
-          <section class="row text-center placeholders">
+  <h1>Formulario 110 V.3</h1>
   <header>
-    <div id="logo-section">
-      <div>
-	<img src="{% static "images/impuesto.bmp" %}"/>
-      </div>
-      <div id="logo-title">
-	<p>IMPUESTOS NACIONALES</p>
-	<p>DD.JJ. PARA </p>
-	<p>PRESENTACION DE NOTAS FISCALES</p>
-      </div>
-    </div>
-    <div id="libre-impuestos-section">
-      <div id="libre-impuestos-section-title">
-	<table>
-	  <tr><td>FORMULARIO IMPUESTOS</td><td>IMPORTES EN BOLIVIANOS SIN CENTAVOS</td></tr>
-	</table>
-      </div>
-      <div id="formulario-section">
-	<div id="formulario-title"><h2>FORM 110 VER.2</h2></div>
-	<div id="selection-section">
-	  <table>
-	    <tr>
-	      <td>FUNCIONARIO DEPENDIENTE:</td>
-	      <td><input class="selection-input" type="checkbox" name="option1"></td>
-	    </tr>
-	    <tr>
-	      <td>ANEXO AL FORM: 610 (RC-IVA):</td>
-	      <td><input class="selection-input" type="checkbox" name="option2"></td>
-	    </tr>
-	    <tr>
-	      <td>ANEXO AL FORM: 702 (STI):</td>
-	      <td><input class="selection-input" type="checkbox" name="option3"></td>
-	    </tr>
-	    <tr>
-	      <td>ANEXO AL FORM: 510 (profesionales):</td>
-	      <td><input class="selection-input" type="checkbox" name="option4"></td>
-	    </tr>
-	    <tr>
-	      <td>Márque solo una casilla</td>
-	    </tr>
-	  </table>
-	</div>
-	<div id="numero-orden-section">
-	  <table>
-	    <tr>
-	      <td>NUMERO DE ORDEN</td>
-	    </tr>
-	    <tr>
-	      <td><input class="orden-input" type="text" /></td>
-	    </tr>
-	    <tr>
-	      <td>NIT</td>
-	    </tr>
-	    <tr>
-	      <td><input class="orden-input" type="text" /></td>
-	    </tr>
-	  </table>
-	</div>
-      </div>
-    </div>
-    <div id="folio-section">
-      <div id="folio-title">
-	<p id="folio-title-text">FOLIO</p>
-	<p>USO BANCO O</p>
-	<p>COLECTURIA</p>
-      </div>
-      <div id="folio-periodo">
-	<p>PERIODO</p>
-	<table>
-	  <tr><td>MES</td><td>AÑO</td></tr>
-	  <tr><td><input class="folio-input" type="text" /></td><td><input class="folio-input" type="text" /></td></tr>
-	</table>
-      </div>
-    </div>
+        <table class="formulario-encabezado">
+            <tr>
+                <td class="formulario-logo">FORM 110 V.3</td>
+                <td class="formulario-lugar">
+                    <p>LUGAR</p>
+                    <select>
+                        <option>Santa Cruz</option>
+                        <option>Cochabamba</option>
+                        <option>La Paz</option>
+                        <option>Beni</option>
+                        <option>Pando</option>
+                        <option>Tarija</option>
+                        <option>Chuquisaca</option>
+                        <option>Potosi</option>
+                        <option>Oruro</option>
+                    </select>
+                    <p>FECHA DE PRESENTACION</p>
+                    <div>
+                        <input type="text" />
+                    </div>
+                </td>
+                <td class="formulario-tipo">
+                    <p>MARQUE LA CASILLA QUE CORRESPONDA</p>
+                    <div>
+                        <input type="checkbox" checked="checked"> Formulario Dependiente<br>
+                        <input type="checkbox"> Sistema Tributario Integrado (F.702)<br>
+                        <input type="checkbox"> RC-IVA Contribuyente Directo (F.610)<br>
+                        <input type="checkbox"> Profesiones Liberales u Oficios (F.510)<br>
+                    </div>
+                </td>
+                <td class="formulario-nit">
+                    <p>NUMERO DE ORDEN</p>
+                    <div><input class="fecha" type="text"/></div>
+                    <p>NIT</p>
+                    <div><input class="fecha" type="text"/></div>
+                </td>
+                <td>
+                    <p>PERIODO</p>
+                    <p>Mes</p>
+                    <div><input class="fecha" type="text"/></div>
+                    <p>Año</p>
+                    <div><input class="fecha" type="text"/></div>
+                </td>
+            </tr>
+        </table>
   </header>
+
   <section id="formulario-personal-section">
     <table id="formulario-personal-section-nombres">
       <tr><td>NOMBRES Y APELLIDOS:</td><td id="formulario-personal-section-cell"><input class="formulario-personal-input" type="text" /></td></tr>

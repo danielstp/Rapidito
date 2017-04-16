@@ -12,14 +12,14 @@ before_install:
   - sudo apt-get install -qq firefox automake libtool libreadline6 libreadline6-dev libreadline-dev
   - sudo apt-get install -qq libsqlite3-dev libxml2 libxml2-dev libssl-dev libbz2-dev wget curl llvm
   - python3 -V
-  - pip3 -V
+  - pip -V
 # command to install dependencies
 install:
   - npm install
-  - sudo pip3 install -r requirements/base.txt
-  - sudo pip3 install -r requirements/local.txt
-  - sudo pip3 install -r requirements/production.txt
-  - sudo pip3 install -r requirements/test.txt"
+  - sudo pip install -r requirements/base.txt
+  - sudo pip install -r requirements/local.txt
+  - sudo pip install -r requirements/production.txt
+  - sudo pip install -r requirements/test.txt"
 # command to run tests
 script:
   - pep8 rapidito

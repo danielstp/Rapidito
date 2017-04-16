@@ -19,3 +19,5 @@ script:
   - flake8 rapidito
   - pylint rapidito
   - pytest
+  - gulp format
+  - gulp jslint

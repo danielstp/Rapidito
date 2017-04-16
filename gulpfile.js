@@ -19,6 +19,9 @@ var gulp = require('gulp'),
       exec = require('child_process').exec,
       runSequence = require('run-sequence'),
       browserSync = require('browser-sync').create(),
+      jslint = require('gulp-jslint');
+      format = require('gulp-clang-format');
+      clangformat = require('clang-format');
       reload = browserSync.reload;
 
 
@@ -98,7 +101,20 @@ gulp.task('watch', function() {
 
 });
 
+// clang-format
+gulp.task('format', function() {
+  return gulp.src(paths.app + '/**/*.js')
+    .pipe(format.checkFormat('file', clangformat, {verbose: true, fail:true}));
+});
+
+// jslint
+gulp.task('jslint', function() {
+  return gulp.src(paths.app + '/**/*.js')
+    .pipe(jslint())
+    .pipe(jslint.reporter('stylish'));
+});
+
 // Default task
 gulp.task('default', function() {
-    runSequence(['styles', 'scripts', 'imgCompression'], 'runServer', 'browserSync', 'watch');
+    runSequence(['format', 'jslint', 'styles', 'scripts', 'imgCompression'], 'runServer', 'browserSync', 'watch');
 });

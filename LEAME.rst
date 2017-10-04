@@ -1,3 +1,6 @@
+.. image:: https://api.travis-ci.org/danielstp/Rapidito.png?branch=master
+  :target: https://travis-ci.org/danielstp/Rapidito
+
 Rapidito
 ========
 
